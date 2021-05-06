@@ -28,8 +28,8 @@ git fetch -q https://android.googlesource.com/platform/build/soong $TAG
 git merge FETCH_HEAD -q -m "Merge tag '$TAG' into eleven"
 cd ..
 
-# Settings 
-echo "Merging Settings..."
+# build make 
+echo "Merging build make..."
 git clone -q https://github.com/XOSP-Reborn/build make
 cd make
 git fetch -q https://android.googlesource.com/platform/build $TAG
